@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom';
 import { Menu, Segment } from 'semantic-ui-react'
-import './Menubar.css';
+import './Bio.css';
 import { Header } from 'semantic-ui-react'
 import {MenuBar} from "./Menubar";
 
