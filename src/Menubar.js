@@ -8,7 +8,21 @@ import { Header } from 'semantic-ui-react'
 export class MenuBar extends Component {
     state = { activeItem: 'closest' }
 
-    handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+    constructor(props){
+        super(props);
+        this.handleItemClick = this.handleItemClick.bind(this);
+    }
+
+    state = { activeItem: 'menu' }
+
+    handleSubmit = (val)=> {
+        this.props.onChange(val);
+    }
+    handleItemClick = (e, { name }) => {
+        this.setState({ activeItem: name });
+        this.handleSubmit(name);
+    }
+
 
     render() {
         const { activeItem } = this.state
@@ -18,14 +32,12 @@ export class MenuBar extends Component {
                 <Menu secondary >
                     <Menu.Item
                         name='Home'
-                        active={activeItem === 'Home'}
                         onClick={this.handleItemClick}
                     >
                         Home
                     </Menu.Item>
                     <Menu.Item
                         name='About'
-                        active={activeItem === 'About'}
                         onClick={this.handleItemClick}
                     >
                         About
@@ -33,7 +45,6 @@ export class MenuBar extends Component {
 
                     <Menu.Item
                         name='Resume'
-                        active={activeItem === 'Resume'}
                         onClick={this.handleItemClick}
                     >
                         Resume
@@ -41,7 +52,6 @@ export class MenuBar extends Component {
 
                     <Menu.Item
                         name='Projects'
-                        active={activeItem === 'Projects'}
                         onClick={this.handleItemClick}
                     >
                         Projects
