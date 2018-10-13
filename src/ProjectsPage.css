@@ -13,6 +13,34 @@
 .Project {
 }
 
+.BackButton {
+    float:left;
+    padding-left: 5vh;
+    background-color: transparent;
+}
 
-#ProjectHeader {
+.ProjectHeader {
+    border-radius: 1em;
+    padding-top: 5vh;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+
+
+i:hover{
+    color: #000080;
+    cursor:pointer;
+    margin-left: -10px;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+
+.ReturnToMenu {
+
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }

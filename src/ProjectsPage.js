@@ -5,6 +5,9 @@ import { Projects } from './Projects'
 import {Image, Icon, Header, Card, Button} from 'semantic-ui-react'
 import './ProjectsPage.css'
 import * as contentful from 'contentful'
+import ScrollToTop from 'react-scroll-up'
+import * as Markdown from 'react-markdown'
+
 
 export class ProjectsPage extends Component {
 
@@ -52,15 +55,30 @@ export class ProjectsPage extends Component {
 
         const Vinny = () => (
             <div className="Project-Vinny">
-                <Header size = 'huge' id = 'ProjectHeader'>{this.state.Vinny.title} </Header>
-                <Button name = 'ProjectsGrid'  onClick={this.handleItemClick}>
-                    <Icon name = 'arrow left'>
-                    </Icon>
-                </Button>
                 <p>
-
-                    {this.state.Vinny.description}
                 </p>
+                <div className = "BackButton">
+                    <Button name = 'ProjectsGrid'  onClick={this.handleItemClick}>
+                        <Icon name = 'arrow left' size ='large'>
+                        </Icon>
+                    </Button>
+                </div>
+
+                <div className = "ProjectHeader">
+                    <Header size = 'huge'>{this.state.Vinny.title} </Header>
+                </div>
+
+                <ScrollToTop showUnder={160}>
+                    <span>UP</span>
+                </ScrollToTop>
+                <div  className = 'ReturnToMenu'>
+
+                </div>
+                <div>
+                <Markdown source = {this.state.Vinny.description}/>
+                </div>
+
+
             </div>
         )
 
