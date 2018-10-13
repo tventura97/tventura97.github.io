@@ -14,7 +14,10 @@ export class HomePage extends Component {
         {
             window.location.href = "https://www.github.com/tventura97"
         }
-
+        if (name == 'Maisy')
+        {
+            window.location.href = "https://maisyleigh.github.io/"
+        }
         if (name == 'Mail'){
             window.open('mailto:tventura0297@gmail.com?subject=subject&body=body');
         }
@@ -36,7 +39,7 @@ export class HomePage extends Component {
                         <Icon name='linkedin' size = 'big' onClick = {() => this.iconClicked('LinkedIn')}/>
                         </Grid.Column>
                         <Grid.Column>
-                        <Icon name='users' size = 'big'onClick = {() => this.iconClicked('LinkedIn')}/>
+                        <Icon name='users' size = 'big'onClick = {() => this.iconClicked('Maisy')}/>
                         </Grid.Column>
                         <Grid.Column>
                         <Icon name='mail' size = 'big'onClick = {() => this.iconClicked('Mail')}/>
