@@ -3,27 +3,34 @@ import React from "react";
 import  Hamster from "./pic.jpg"
 import { MenuBar } from './Menubar';
 import './HomePage.css';
-import { Header } from 'semantic-ui-react';
+import { Header, Button } from 'semantic-ui-react';
+import {Menu} from "semantic-ui-react/dist/commonjs/collections/Menu/Menu";
 
 
 
 export class Project extends Component {
 
+    constructor(props){
+        super(props);
+        this.handleItemClick = this.handleItemClick.bind(this);
+    }
+
+    state = { activeItem: 'menu' }
+
+    handleSubmit = (val)=> {
+        this.props.onChange(val);
+    }
+    handleItemClick = (e, { name }) => {
+        this.setState({ activeItem: name });
+        this.handleSubmit(name);
+    }
+
     render() {
         return (
             <div className="Project">
-                <div id = "Header">
-                    <h1 id = "Name"> Tristan Ventura </h1>
-                    <MenuBar onChange={this.handleChange}></MenuBar>
-                </div>
-                <div>
-                    <Header size = 'huge'>
-                        Project
-                    </Header>
-                </div>
-                <div id = "Image">
-                    <img src = { Hamster } alt = "Hamster throwing up a banana" style={{width: 900, height: 600}}></img>
-                </div>
+                <Button name = 'Project'  onClick={this.handleItemClick}>
+
+                </Button>
             </div>
 
         );

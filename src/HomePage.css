@@ -3,3 +3,11 @@
     width:fit-content;
     padding-top: 5vh
 }
+
+#MainQuote {
+    padding: 30vh 30vh 35vh 30vh;
+    font-size: 30px;
+    color: navy;
+    border: black;
+
+}
