@@ -21,7 +21,7 @@
       Page
 ---------------*/
 
-@pageBackground      : #F9F9F9;
+@pageBackground      : white;
 @lineHeight          : 1.33;
 @textColor           : #212121;
 

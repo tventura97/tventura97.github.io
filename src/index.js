@@ -4,8 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import * as contentful from 'contentful'
-import 'semantic-ui-css/semantic.min.css';
-import './semantic/dist/semantic.min.css';
+
 
 var client  = contentful.createClient({
     space: '75z2171sm1m9',

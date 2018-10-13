@@ -1,13 +1,22 @@
 import React, { Component } from 'react';
 import { Document, Page } from 'react-pdf/dist/entry.noworker';
 import ResumePDF from './TVResume.pdf'
+import { Button } from 'semantic-ui-react'
 import './Resume.css'
+
+
 export class Resume extends Component {
 
     state = {
         pageNumber: 1,
     }
 
+    DownloadResume = () => {
+        //idk put link for resume here at some point
+        window.location = ResumePDF;
+
+
+    }
     render() {
         const { pageNumber } = this.state;
 
@@ -19,6 +28,9 @@ export class Resume extends Component {
                         <Page pageNumber={pageNumber} />
 
                     </Document>
+                    <div id = "DownloadButton">
+                      <Button onClick = {this.DownloadResume} color = 'green'>Download</Button>
+                    </div>
                 </div>
         );
     }

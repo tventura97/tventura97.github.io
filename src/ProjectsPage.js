@@ -6,6 +6,7 @@ import {Image, Icon, Header, Card, Button} from 'semantic-ui-react'
 import './ProjectsPage.css'
 import * as contentful from 'contentful'
 import ScrollToTop from 'react-scroll-up'
+import ComingSoonImage from './comingsoon.png'
 import * as Markdown from 'react-markdown'
 
 
@@ -93,28 +94,28 @@ export class ProjectsPage extends Component {
 
                 <Card.Group itemsPerRow={4} className = "CardGroup" name = 'ProjectsGrid'>
                     <Card name = "Project-Vinny" onClick = {this.handleItemClick}>
-                        <Image src='https://react.semantic-ui.com/images/avatar/large/matthew.png' />
+                        <Image src = {ComingSoonImage} />
                         <Card.Content>
                             <Card.Header>Audio "Vinylizer"</Card.Header>
                             <Card.Description>Makes audio sound retro.</Card.Description>
                         </Card.Content>
                     </Card>
                     <Card name = "Project-Two" onClick = {this.handleItemClick}>
-                        <Image src='https://react.semantic-ui.com/images/avatar/large/matthew.png' />
+                        <Image src={ComingSoonImage} />
                         <Card.Content>
                             <Card.Header>Facial Recognition Vending Machine</Card.Header>
                             <Card.Description>It knows what your favorite candy is.</Card.Description>
                         </Card.Content>
                     </Card>
                     <Card name = "Project-Three" onClick = {this.handleItemClick}>
-                        <Image src='https://react.semantic-ui.com/images/avatar/large/matthew.png' />
+                        <Image src={ComingSoonImage} />
                         <Card.Content>
                             <Card.Header>FreelyEntry</Card.Header>
                             <Card.Description>Take the hassle out of journaling.</Card.Description>
                         </Card.Content>
                     </Card>
                     <Card name = "Project-Four" onClick = {this.handleItemClick}>
-                        <Image src='https://react.semantic-ui.com/images/avatar/large/matthew.png' />
+                        <Image src={ComingSoonImage} />
                         <Card.Content>
                             <Card.Header>Circles</Card.Header>
                             <Card.Description>Make hanging out with your friends much easier.</Card.Description>
