@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93bd0200-29a3-4ea2-81b6-d0d87a8850f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/vinny.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectsPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectsPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProjectsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectsPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resume.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resume.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resume.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resume.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,15 +15,15 @@
     <session id="-1463441862">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.286" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -67,7 +59,7 @@
         <counts>
           <entry key="config" value="49" />
           <entry key="css" value="2198" />
-          <entry key="js" value="7180" />
+          <entry key="js" value="7603" />
           <entry key="json" value="43" />
           <entry key="variables" value="35" />
         </counts>
@@ -76,7 +68,7 @@
         <counts>
           <entry key="CSS" value="2198" />
           <entry key="JSON" value="43" />
-          <entry key="JavaScript" value="7180" />
+          <entry key="JavaScript" value="7603" />
           <entry key="PLAIN_TEXT" value="84" />
         </counts>
       </usages-collector>
@@ -92,7 +84,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ProjectsPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="1632">
               <caret line="107" column="79" selection-start-line="107" selection-start-column="79" selection-end-line="107" selection-end-column="79" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
@@ -104,8 +96,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Bio.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+            <state relative-caret-position="340">
+              <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -142,7 +134,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HomePage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
+            <state relative-caret-position="782">
               <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
@@ -154,7 +146,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="17">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
@@ -166,7 +158,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Menubar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state relative-caret-position="68">
               <caret line="8" selection-start-line="8" selection-end-line="23" selection-end-column="5" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
@@ -268,7 +260,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1490" />
+    <option name="x" value="1130" />
+    <option name="y" value="-12" />
     <option name="width" value="1522" />
     <option name="height" value="1932" />
   </component>
@@ -277,8 +270,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -295,12 +286,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539572680133" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539572777498" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../MaisySite/maisyleigh.github.io" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -339,18 +332,19 @@
       <workItem from="1539289183835" duration="3068000" />
       <workItem from="1539292711865" duration="11449000" />
       <workItem from="1539329226319" duration="16325000" />
-      <workItem from="1539439525993" duration="12305000" />
+      <workItem from="1539439525993" duration="12498000" />
+      <workItem from="1539577785260" duration="2634000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53426000" />
+    <option name="totallyTimeSpent" value="56253000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16151203" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16357388" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -365,8 +359,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49828178" visible="true" weight="0.28859857" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5017182" side_tool="true" visible="true" weight="0.28859857" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4975945" visible="true" weight="0.28859857" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5024055" side_tool="true" visible="true" weight="0.28859857" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32994923" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -516,9 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -553,9 +544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="28" column="64" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -577,19 +565,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/rfindlogo.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project.js">
+    <entry file="file://$PROJECT_DIR$/src/ProjectsPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="1632">
+          <caret line="107" column="79" selection-start-line="107" selection-start-column="79" selection-end-line="107" selection-end-column="79" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -598,23 +583,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Menubar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="8" selection-start-line="8" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -626,20 +594,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HomePage.css">
+    <entry file="file://$PROJECT_DIR$/src/App.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        <state relative-caret-position="119">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HomePage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
+        <state relative-caret-position="782">
           <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Menubar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" selection-start-line="8" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomePage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -650,20 +645,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ProjectsPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="107" column="79" selection-start-line="107" selection-start-column="79" selection-end-line="107" selection-end-column="79" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Bio.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        <state relative-caret-position="340">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>

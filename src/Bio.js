@@ -16,10 +16,11 @@ export class Bio extends Component {
 
                 </div>
                 <div id = "Bio">
-                <p>
-                    (to be added)
+                    <Header bold size = 'medium'> I like to make stuff.</Header>
+                    <p>
+                        to be added.
+                    </p>
 
-                </p>
                 </div>
             </div>
         );
