@@ -7,6 +7,8 @@ import './ProjectsPage.css'
 import * as contentful from 'contentful'
 import ScrollToTop from 'react-scroll-up'
 import ComingSoonImage from './comingsoon.png'
+import VinnyPic from './vinny.jpg'
+import RfindLogo from './rfindlogo.jpg'
 import * as Markdown from 'react-markdown'
 
 
@@ -52,8 +54,6 @@ export class ProjectsPage extends Component {
 
     render() {
 
-
-
         const Vinny = () => (
             <div className="Project-Vinny">
                 <p>
@@ -67,16 +67,24 @@ export class ProjectsPage extends Component {
 
                 <div className = "ProjectHeader">
                     <Header size = 'huge'>{this.state.Vinny.title} </Header>
+                    <Header size = 'medium'>Skills & Techs:</Header>
+                    <Markdown source = {this.state.Vinny.technologies}/>
                 </div>
-
                 <ScrollToTop showUnder={160}>
                     <span>UP</span>
                 </ScrollToTop>
-                <div  className = 'ReturnToMenu'>
-
+                <div className = "motivation">
+                    <Header size = 'medium'> Motivation </Header>
+                <Markdown source = {this.state.Vinny.motivation}/>
                 </div>
-                <div>
-                <Markdown source = {this.state.Vinny.description}/>
+                <div className = "process">
+                    <Header size = 'medium'> Process (in progress) </Header>
+                    <Markdown source = {this.state.Vinny.process}/>
+                </div>
+                <div className = "results">
+                    <Header size = 'medium'> Results </Header>
+
+                    <Markdown source = {this.state.Vinny.results}/>
                 </div>
 
 
@@ -94,31 +102,91 @@ export class ProjectsPage extends Component {
 
                 <Card.Group itemsPerRow={4} className = "CardGroup" name = 'ProjectsGrid'>
                     <Card name = "Project-Vinny" onClick = {this.handleItemClick}>
-                        <Image src = {ComingSoonImage} />
+                        <Image src = { VinnyPic } />
                         <Card.Content>
                             <Card.Header>Audio "Vinylizer"</Card.Header>
-                            <Card.Description>Makes audio sound retro.</Card.Description>
+                            <Card.Description>Makes audio sound retro. (content being updated)</Card.Description>
                         </Card.Content>
                     </Card>
-                    <Card name = "Project-Two" onClick = {this.handleItemClick}>
+
+                    <Card name = "Project-RFInD" onClick = {this.handleItemClick}>
+                        <Image src={ RfindLogo } />
+                        <Card.Content>
+                            <Card.Header>RFInD (coming soon)</Card.Header>
+                            <Card.Description>RFID based location tracking startup.</Card.Description>
+                        </Card.Content>
+                    </Card>
+
+                    <Card name = "Project-LearnOptics" onClick = {this.handleItemClick}>
                         <Image src={ComingSoonImage} />
                         <Card.Content>
-                            <Card.Header>Facial Recognition Vending Machine</Card.Header>
+                            <Card.Header>Learn Optics (coming soon)</Card.Header>
+                            <Card.Description>Learn optics.</Card.Description>
+                        </Card.Content>
+                    </Card>
+
+                    <Card name = "Project-Face" onClick = {this.handleItemClick}>
+                        <Image src={ComingSoonImage} />
+                        <Card.Content>
+                            <Card.Header>Facial Recognition Vending Machine (coming soon)</Card.Header>
                             <Card.Description>It knows what your favorite candy is.</Card.Description>
                         </Card.Content>
                     </Card>
-                    <Card name = "Project-Three" onClick = {this.handleItemClick}>
+
+
+                    <Card name = "Project-Entry" onClick = {this.handleItemClick}>
                         <Image src={ComingSoonImage} />
                         <Card.Content>
                             <Card.Header>FreelyEntry</Card.Header>
                             <Card.Description>Take the hassle out of journaling.</Card.Description>
                         </Card.Content>
                     </Card>
-                    <Card name = "Project-Four" onClick = {this.handleItemClick}>
+
+                    <Card name = "Project-Circles" onClick = {this.handleItemClick}>
                         <Image src={ComingSoonImage} />
                         <Card.Content>
                             <Card.Header>Circles</Card.Header>
                             <Card.Description>Make hanging out with your friends much easier.</Card.Description>
+                        </Card.Content>
+                    </Card>
+
+                    <Card name = "Project-LoRa" onClick = {this.handleItemClick}>
+                        <Image src={ComingSoonImage} />
+                        <Card.Content>
+                            <Card.Header>LoRa Notifier</Card.Header>
+                            <Card.Description>Use the LoRa network to let someone know you're thinking about them.</Card.Description>
+                        </Card.Content>
+                    </Card>
+
+                    <Card name = "Project-Equalizer" onClick = {this.handleItemClick}>
+                        <Image src={ComingSoonImage} />
+                        <Card.Content>
+                            <Card.Header>Graphical Equalizer</Card.Header>
+                            <Card.Description>Simple, graphical equalizer implemented in MATLAB.</Card.Description>
+                        </Card.Content>
+                    </Card>
+
+                    <Card name = "Project-DressMe" onClick = {this.handleItemClick}>
+                        <Image src={ComingSoonImage} />
+                        <Card.Content>
+                            <Card.Header>DressMe</Card.Header>
+                            <Card.Description>Don't feel like keeping up with the latest fashion trends? Let our ML Algorithms do it for you.</Card.Description>
+                        </Card.Content>
+                    </Card>
+
+                    <Card name = "Project-Banking" onClick = {this.handleItemClick}>
+                        <Image src={ComingSoonImage} />
+                        <Card.Content>
+                            <Card.Header>Simple Banking Application</Card.Header>
+                            <Card.Description>Simple banking console application.</Card.Description>
+                        </Card.Content>
+                    </Card>
+
+                    <Card name = "Project-Account" onClick = {this.handleItemClick}>
+                        <Image src={ComingSoonImage} />
+                        <Card.Content>
+                            <Card.Header>Simple Account Management Application</Card.Header>
+                            <Card.Description>Simple account management console application.</Card.Description>
                         </Card.Content>
                     </Card>
                 </Card.Group>

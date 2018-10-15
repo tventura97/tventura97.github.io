@@ -21,7 +21,7 @@
 
 .ProjectHeader {
     border-radius: 1em;
-    padding-top: 5vh;
+    padding-top: 10%;
     position: absolute;
     left: 50%;
     margin-right: -50%;
@@ -43,4 +43,24 @@ i:hover{
 
     padding-top: 5vh;
     padding-bottom: 5vh;
+}
+
+.motivation {
+    padding-top: 20vh;
+}
+
+.process {
+
+    padding-top: 5vh;
+
+
+}
+
+.results {
+    padding-top: 5vh;
+
+}
+
+.Project-Vinny {
+
 }
