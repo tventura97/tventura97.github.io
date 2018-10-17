@@ -60,9 +60,6 @@ export class HomePage extends Component {
                         <Icon name='linkedin' size = 'big' onClick = {() => this.iconClicked('LinkedIn')}/>
                         </Grid.Column>
                         <Grid.Column>
-                        <Icon name='users' size = 'big'onClick = {() => this.iconClicked('Maisy')}/>
-                        </Grid.Column>
-                        <Grid.Column>
                         <Icon name='mail' size = 'big'onClick = {() => this.iconClicked('Mail')}/>
                         </Grid.Column>
                     </Grid>
