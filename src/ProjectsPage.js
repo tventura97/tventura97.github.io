@@ -7,6 +7,7 @@ import './ProjectsPage.css'
 import * as contentful from 'contentful'
 import ScrollToTop from 'react-scroll-up'
 import ComingSoonImage from './comingsoon.png'
+import CirclesImage from './circles.jpg'
 import VinnyPic from './vinny.jpg'
 import RfindLogo from './rfindlogo.jpg'
 import * as Markdown from 'react-markdown'
@@ -16,7 +17,7 @@ export class ProjectsPage extends Component {
 
     state = {
         Vinny: false,
-        circles:false,
+        Circles:false,
 
     }
 
@@ -26,6 +27,7 @@ export class ProjectsPage extends Component {
 
     componentDidMount() {
         this.fetchVinny().then(this.setPosts);
+        this.fetchCircles().then(this.setPosts);
     }
     //Gonna just do this a really janky way bc I don't have the time to do it any differently.
 
@@ -38,7 +40,15 @@ export class ProjectsPage extends Component {
                 })
             }
         })
-
+    fetchCircles = () => this.client.getEntry('4Z12b83jF6koKEOOG8scqs')
+        .then(entry => {
+            if(entry.fields){
+                console.log(entry.fields)
+                this.setState({
+                    Circles: entry.fields,
+                })
+            }
+        })
 
 
     constructor(props){
@@ -91,6 +101,47 @@ export class ProjectsPage extends Component {
             </div>
         )
 
+        const Circles = () => (
+            <div className="Project-Circles">
+                <p>
+                </p>
+                <div className = "BackButton">
+                    <Button name = 'ProjectsGrid'  onClick={this.handleItemClick}>
+                        <Icon name = 'arrow left' size ='large'>
+                        </Icon>
+                    </Button>
+                </div>
+
+                <div className = "ProjectHeader">
+                    <Header size = 'huge'>{this.state.Circles.title} </Header>
+                    <Header size = 'medium'>Skills & Techs:</Header>
+                    <Markdown source = {this.state.Circles.technologies}/>
+                </div>
+                <ScrollToTop showUnder={160}>
+                    <span>UP</span>
+                </ScrollToTop>
+                <div className = "motivation">
+                    <Header size = 'medium'> Motivation </Header>
+                    <Markdown source = {this.state.Circles.motivation}/>
+                </div>
+                <div className = "process">
+                    <Header size = 'medium'> Process</Header>
+                    <Markdown source = {this.state.Circles.process}/>
+                </div>
+                <div className = "results">
+                    <Header size = 'medium'> Results </Header>
+
+                    <Markdown source = {this.state.Circles.results}/>
+
+                </div>
+                <div>
+
+                    <Header size = 'medium'> The application is currently being developed.</Header>
+                </div>
+
+
+            </div>
+        )
 
         const ProjectsGrid = () => (
             <div>
@@ -117,10 +168,10 @@ export class ProjectsPage extends Component {
                         </Card.Content>
                     </Card>
 
-                    <Card name = "Project-LearnOptics" onClick = {this.handleItemClick}>
+                    <Card name = "Project-Optics" onClick = {this.handleItemClick}>
                         <Image src={ComingSoonImage} />
                         <Card.Content>
-                            <Card.Header>Learn Optics (coming soon)</Card.Header>
+                            <Card.Header>Learn Optics (github link)</Card.Header>
                             <Card.Description>Learn optics.</Card.Description>
                         </Card.Content>
                     </Card>
@@ -143,7 +194,7 @@ export class ProjectsPage extends Component {
                     </Card>
 
                     <Card name = "Project-Circles" onClick = {this.handleItemClick}>
-                        <Image src={ComingSoonImage} />
+                        <Image src={CirclesImage} />
                         <Card.Content>
                             <Card.Header>Circles</Card.Header>
                             <Card.Description>Make hanging out with your friends much easier.</Card.Description>
@@ -161,7 +212,7 @@ export class ProjectsPage extends Component {
                     <Card name = "Project-Equalizer" onClick = {this.handleItemClick}>
                         <Image src={ComingSoonImage} />
                         <Card.Content>
-                            <Card.Header>Graphical Equalizer</Card.Header>
+                            <Card.Header>Graphical Equalizer (github link)</Card.Header>
                             <Card.Description>Simple, graphical equalizer implemented in MATLAB.</Card.Description>
                         </Card.Content>
                     </Card>
@@ -177,7 +228,7 @@ export class ProjectsPage extends Component {
                     <Card name = "Project-Banking" onClick = {this.handleItemClick}>
                         <Image src={ComingSoonImage} />
                         <Card.Content>
-                            <Card.Header>Simple Banking Application</Card.Header>
+                            <Card.Header>Simple Banking Application (github link)</Card.Header>
                             <Card.Description>Simple banking console application.</Card.Description>
                         </Card.Content>
                     </Card>
@@ -185,7 +236,7 @@ export class ProjectsPage extends Component {
                     <Card name = "Project-Account" onClick = {this.handleItemClick}>
                         <Image src={ComingSoonImage} />
                         <Card.Content>
-                            <Card.Header>Simple Account Management Application</Card.Header>
+                            <Card.Header>Simple Account Management Application (github link)</Card.Header>
                             <Card.Description>Simple account management console application.</Card.Description>
                         </Card.Content>
                     </Card>
@@ -202,15 +253,41 @@ export class ProjectsPage extends Component {
         if(state === 'ProjectsGrid'){
             content = <ProjectsGrid/>;
         }
-        if(state.toString().includes('Vinny')){
+        else if(state.toString().includes('Vinny')){
 
             content = <Vinny></Vinny>
+
+        }
+        else if(state.toString().includes('Circles')){
+
+            content = <Circles></Circles>
+
+        }
+        else if(state.toString().includes('Optics')){
+
+            window.location.href = "https://github.com/tventura97/Learn-Optics---Unity/tree/develop"
+
+        }
+        else if(state.toString().includes('Banking')){
+
+            window.location.href = "https://github.com/tventura97/Bank-Account-Console-App"
+
+        }
+        else if(state.toString().includes('Account')){
+
+            window.location.href = "https://github.com/tventura97/AccMgmt-Console-App"
+
+        }
+        else if(state.toString().includes('Equalizer')){
+
+            window.location.href = "https://github.com/tventura97/Equalizer"
 
         }
 
 
 
-    //Grid of Projects
+
+        //Grid of Projects
 
         return (
             <div className="Projects">

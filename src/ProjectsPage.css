@@ -64,3 +64,21 @@ i:hover{
 .Project-Vinny {
 
 }
+img{
+    width:50%;
+    text-align:left;
+    margin: 0 auto;
+}
+h5{
+    width: 70%;
+    text-align:center;
+    margin: 0 auto;
+}
+
+
+p{
+    width: 70%;
+    text-align:left;
+    margin: 0 auto 3em;
+    text-align: center;
+}
