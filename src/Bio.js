@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import { Menu, Segment } from 'semantic-ui-react'
 import './Bio.css';
 import Picture from './mehackru.jpg'
+import AcePic from './MeAndAce.jpg'
+import AceSunglasses from './acesunglasses.JPG'
 import { Header, Image, Tab } from 'semantic-ui-react'
 import {MenuBar} from "./Menubar";
 
@@ -63,19 +65,28 @@ export class Bio extends Component {
 
 
             </div>
-
-
-
-
         )
+
+
+
+
+
+
         const panes = [
             { menuItem: 'Who I am', render: () => <Tab.Pane><About></About></Tab.Pane> },
             { menuItem: 'My Story', render: () => <Tab.Pane><Story></Story></Tab.Pane> },
-           // { menuItem: 'Tab 3', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
+            { menuItem: 'My Dog', render: () => <Tab.Pane>
+                    <div>
+                    <Header id = 'AceCaption' size = 'medium'> I also have a dog. His name is Ace Ventura (like the pet detective). </Header>
+                    <div  >
+                        <Image id = 'acepic' src = {AcePic} size ='huge'/>
+                    </div>
+                    </div>
+                </Tab.Pane> },
         ]
 
         const BioTabs = () => (
-            <Tab menu={{ fluid: true, vertical: true, tabular: true }} panes={panes} />
+            <Tab menu={{ fluid: true, vertical: true, tabular: false }} panes={panes} />
         )
 
 

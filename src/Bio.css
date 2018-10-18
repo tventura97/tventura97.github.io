@@ -11,3 +11,11 @@
     border-radius: 0.5em;
 
 }
+
+#acepic{
+    transform: rotate(-90deg);
+    border-radius: 0.5em;
+    padding-top:15vh;
+    padding-bottom:15vh;
+
+}
