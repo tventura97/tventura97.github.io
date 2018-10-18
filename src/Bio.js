@@ -52,12 +52,12 @@ export class Bio extends Component {
 
         const About = () => (
             <div>
+                <Header bold size = 'huge'> I like to make stuff.</Header>
                 <Image id = 'HackRUImage' src= { Picture } size='medium'/>
-                <Header bold size = 'large'> I like to make stuff.</Header>
                 <p>
                     For as long as I can remember, I was always taking things apart; trying to discover what made them tick. Whether it was TV remotes, video game controllers, the family landline, and, at one point, even my mother’s tube of lipstick (I got into quite a bit of trouble for that one).
                 </p>
-                <Header bold size = 'tiny'> This strange inclination to constantly take things apart in an attempt to figure out how they worked quickly evolved into a new passion: making things. </Header>
+                <Header id = 'bioquote' bold size = 'tiny'> This strange inclination to constantly take things apart in an attempt to figure out how they worked quickly evolved into a new passion: making things. </Header>
 
                 <p>
                     I started with small things, like paper pencil cases or weird cardboard contraptions. There wasn’t much of a purpose or direction to my habit. I kind of just made anything that came to mind. That is, until I found my dad working on the family computer. He walked me through how everything fit together and, even though I couldn’t understand what he was talking about at the time, I was intrigued. I knew at that moment that my passion was technology. I started building my own computers, then building them for my friends, then finding any excuse to build them in general. But, I wasn’t satisfied with just building computers. I wanted to take my desire to create things and apply it on a wider spectrum. So, going into college, I decided to major in electrical and computer engineering. I knew that it would give me the skills that I needed to be able to pursue my interests as a career.

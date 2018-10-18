@@ -46,7 +46,7 @@ i:hover{
 }
 
 .motivation {
-    padding-top: 20vh;
+    padding-top: 5vh;
 }
 
 .process {
@@ -81,4 +81,15 @@ p{
     text-align:left;
     margin: 0 auto 3em;
     text-align: center;
+}
+.projcontent{
+    width: 70%;
+    margin: 0 auto 3em;
+    text-align: center;
+}
+.ProjectPicture{
+    padding-top:20vh;
+}
+#mainvinnypic {
+    border-radius: 1em;
 }

@@ -68,6 +68,8 @@ export class ProjectsPage extends Component {
             <div className="Project-Vinny">
                 <p>
                 </p>
+
+
                 <div className = "BackButton">
                     <Button name = 'ProjectsGrid'  onClick={this.handleItemClick}>
                         <Icon name = 'arrow left' size ='large'>
@@ -80,21 +82,25 @@ export class ProjectsPage extends Component {
                     <Header size = 'medium'>Skills & Techs:</Header>
                     <Markdown source = {this.state.Vinny.technologies}/>
                 </div>
+                <div className = "ProjectPicture">
+                    <Image id = 'mainvinnypic' src = {VinnyPic} size = 'large'/>
+                </div>
                 <ScrollToTop showUnder={160}>
                     <span>UP</span>
                 </ScrollToTop>
+
                 <div className = "motivation">
                     <Header size = 'medium'> Motivation </Header>
-                <Markdown source = {this.state.Vinny.motivation}/>
+                <Markdown className = "projcontent" source = {this.state.Vinny.motivation}/>
                 </div>
                 <div className = "process">
-                    <Header size = 'medium'> Process (in progress) </Header>
-                    <Markdown source = {this.state.Vinny.process}/>
+                    <Header size = 'medium'> Process</Header>
+                    <Markdown className = "projcontent" source = {this.state.Vinny.process}/>
                 </div>
                 <div className = "results">
                     <Header size = 'medium'> Results </Header>
 
-                    <Markdown source = {this.state.Vinny.results}/>
+                    <Markdown className = "projcontent" source = {this.state.Vinny.results}/>
                 </div>
 
 
