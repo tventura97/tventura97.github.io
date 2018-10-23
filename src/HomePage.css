@@ -16,3 +16,26 @@
     font-size: 24px;
     padding-bottom: 30vh;
 }
+
+#skillsButton{
+
+    font-weight:300;
+    background: none;
+    padding: 0px;
+    border:black;
+    color:black;
+}
+#skillsButton:hover{
+
+}
+
+#backButton{
+    font-size: calc(1vw + 1vh);
+    font-weight:300;
+    background: none;
+    padding: 0px;
+    color:black;
+}
+
+#backButton:hover{
+}
